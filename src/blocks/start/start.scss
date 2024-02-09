@@ -1,0 +1,16 @@
+.start {
+	$self: &;
+
+	&__title {
+		box-sizing: border-box;
+		background-color: rgba(75, 69, 189, 0.44);
+		text-align: center;
+		padding: 80px 24px;
+		line-height: 1.15;
+		margin-bottom: 120px;
+	}
+
+	&__form {
+
+	}
+}

@@ -1,0 +1,35 @@
+.header {
+	$self: &;
+	min-height: 890px;
+	background: url('#{$images-path}header-bg.png') center bottom / cover no-repeat transparent;
+	margin-bottom: 110px;
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding-top: 24px;
+		gap: 50px;
+		margin-bottom: 165px;
+		max-width: 1800px;
+	}
+
+	&__logo {
+
+	}
+
+	&__button {
+
+	}
+
+	&__bottom {
+		max-width: 1800px;
+	}
+
+	&__title {
+		max-width: 1200px;
+		text-align: right;
+		margin-left: auto;
+	}
+
+}

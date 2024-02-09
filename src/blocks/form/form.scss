@@ -1,0 +1,56 @@
+.form {
+	$self: &;
+
+	&__fields {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 100px;
+		max-width: 1270px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 300px;
+	}
+
+	&__field {
+		border-bottom: 3px solid black;
+
+		&_text {
+			grid-column: span 1;
+		}
+		
+		&_area {
+			grid-column: span 2;
+		}
+
+		input, textarea {
+			@extend %reset-input;
+			resize: none;
+			font-size: 40px;
+			padding: 20px 0;
+			width: 100%;
+
+			&::placeholder {
+				color: #626262;
+			}
+		}
+
+		textarea {
+			min-height: 200px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+		margin-bottom: 50px;
+	}
+
+	&__logo {
+		margin-right: auto;
+	}
+	
+	&__button {
+		margin-right: auto;
+	}
+}

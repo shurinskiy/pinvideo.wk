@@ -1,0 +1,57 @@
+.advantage {
+	$self: &;
+	margin-bottom: 170px;
+
+	&__inner {
+
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 110px;
+	}
+
+	&__subtitle {
+		font-family: "IN", sans-serif;
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 1.15;
+		text-align: center;
+		max-width: 1440px;
+		margin: 0 auto 160px;
+
+		span {
+			text-decoration: underline;
+		}
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: minmax(350px, 550px) minmax(500px, 1fr);
+		grid-gap: 110px 60px;
+		align-items: center;
+	}
+	
+	&__item-title {
+		font-weight: 700;
+		font-size: 40px;
+		color: #fff;
+		
+		span {
+			display: block;
+			box-sizing: border-box;
+			background-color: #4A45BD;
+			padding: 35px;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			min-height: 175px;
+		}
+	}
+	
+	&__item-text {
+		font-weight: 500;
+		font-size: 36px;
+	}
+}

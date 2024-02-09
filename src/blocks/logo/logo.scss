@@ -1,0 +1,21 @@
+.logo {
+	$self: &;
+	display: block;
+	width: fit-content;
+	font-family: "AB", sans-serif;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	display: flex;
+	align-items: center;
+	gap: 35px;
+
+	&::before {
+		display: block;
+		content: '';
+		width: 103px;
+		height: 110px;
+		background: url('#{$images-path}logo.svg') center / contain no-repeat transparent;
+	}
+}

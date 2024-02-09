@@ -1,0 +1,16 @@
+.button {
+	$self: &;
+	@extend %reset-button;
+	box-sizing: border-box;
+	display: block;
+	width: fit-content;
+	font-family: "IN", sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.0;
+	background-color: #4A45BD;
+	color: #fff;
+	padding: 28px 20px;
+	border-radius: 5px;
+}

@@ -5,18 +5,61 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 	<link rel="shortcut icon" href="images/favicon.ico"> 
 	<link rel="stylesheet" href="style.css"> 
-	<title></title> 
+	<title>Pin video</title> 
 </head> 
 <body id="home"> 
 <header class="header ">
-  
+	<div class="header__top container">
+		<a class="header__logo logo" href="./">pin.video</a>
+		<a class="header__button button" href="./">Получить консультацию</a>
+	</div>
+	<div class="header__bottom container">
+		<h1 class="header__title title">Повышайте узнаваемость и привлекайте потенциальных клиентов с помощью видеорекламы</h1>
+	</div>
 </header> 
-<main class="main"> 
 
-</main> 
-<footer class="footer"> 
-  
-</footer> 
+<section class="advantage">
+	<div class="advantage__inner container">
+		<h2 class="advantage__title title">Преимущества видеорекламы</h2>
+		<h3 class="advantage__subtitle">Более <span>90% потребителей</span> утверждают, что видеоформаты помогают им принимать решение о покупке</h3>
+		<div class="advantage__items">
+			<h4 class="advantage__item-title"><span>Доступ к целевой аудитории</span></h4>
+			<div class="advantage__item-text">В отличие от рекламы на ТВ, видеореклама в интернете позволяет найти пользователя, которому интересен ваш продукт</div>
+			<h4 class="advantage__item-title"><span>Наглядность и доверие аудитории</span></h4>
+			<div class="advantage__item-text">Видеореклама позволяет продемонстрировать преимущества продукта, повысить доверие и заинтересовать пользователя сделать покупку</div>
+			<h4 class="advantage__item-title"><span>Прозрачная аналитика</span></h4>
+			<div class="advantage__item-text">Возможность подключения аналитических инструментов для оценки показателей эффективности рекламной кампании</div>
+		</div>
+	</div>
+</section>
+
+<section class="start">
+	<h2 class="start__title title">Начать рекламную кампанию</h2>
+	<form class="start__form form container" action="./">
+		<div class="form__fields">
+			<label class="form__field form__field_text">
+				<input type="text" name="name" placeholder="Имя*">
+			</label>
+			<label class="form__field form__field_text">
+				<input type="text" name="company" placeholder="E-mail*">
+			</label>
+			<label class="form__field form__field_text">
+				<input type="text" name="email" placeholder="Название компании">
+			</label>
+			<label class="form__field form__field_text">
+				<input type="text" name="phone" placeholder="Телефон">
+			</label>
+			<label class="form__field form__field_area">
+				<textarea name="msg" placeholder="Опишите задачу"></textarea>
+			</label>
+		</div>
+		<div class="form__buttons">
+			<a class="form__logo logo" href="./">pin.video</a>
+			<button class="form__button button" type="submit">Получить консультацию</button>
+		</div>
+	</form>
+</section>
+
 <script src="common.js"></script> 
 </body> 
 </html>
