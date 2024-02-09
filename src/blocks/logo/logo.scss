@@ -10,12 +10,39 @@
 	display: flex;
 	align-items: center;
 	gap: 35px;
+	
+	@include media('<=xxxlg') {
+		font-size: 32px;
+		gap: 30px;
+	}
+	
+	@include media('<=lg') {
+		font-size: 28px;
+		gap: 20px;
+	}
+	
+	@include media('<=xs') {
+		font-size: 24px;
+		gap: 15px;
+	}
 
 	&::before {
 		display: block;
 		content: '';
-		width: 103px;
-		height: 110px;
+		width: 100px;
+		aspect-ratio: 1;
 		background: url('#{$images-path}logo.svg') center / contain no-repeat transparent;
+		
+		@include media('<=xxxlg') {
+			width: 90px;
+		}
+		
+		@include media('<=lg') {
+			width: 80px;
+		}
+		
+		@include media('<=xs') {
+			width: 70px;
+		}
 	}
 }

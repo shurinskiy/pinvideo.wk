@@ -1,8 +1,38 @@
 .header {
 	$self: &;
 	min-height: 890px;
-	background: url('#{$images-path}header-bg.png') center bottom / cover no-repeat transparent;
+	background: url('#{$images-path}header-bg.png') center top / cover no-repeat transparent;
 	margin-bottom: 110px;
+	
+	@include media('<=xxxlg') {
+		min-height: 800px;
+	}
+	
+	@include media('<=xxlg') {
+		min-height: 720px;
+	}
+	
+	@include media('<=xlg') {
+		min-height: 700px;
+		background-position: left -120px top;
+	}
+	
+	@include media('<=lg') {
+		min-height: 640px;
+	}
+	
+	@include media('<=md') {
+		min-height: 600px;
+	}
+	
+	@include media('<=sm') {
+		background-position: left -165px top;
+		min-height: 500px;
+	}
+	
+	@include media('<=xxs') {
+		background-position: center top;
+	}
 
 	&__top {
 		display: flex;
@@ -12,10 +42,36 @@
 		gap: 50px;
 		margin-bottom: 165px;
 		max-width: 1800px;
+		
+		@include media('<=xxxlg') {
+			margin-bottom: 130px;
+		}
+		
+		@include media('<=xxlg') {
+			margin-bottom: 100px;
+		}
+		
+		@include media('<=sm') {
+			justify-content: space-between;
+			margin-bottom: 80px;
+			gap: 40px;
+		}
+		
+		@include media('<=xs') {
+			gap: 25px;
+		}
+		
+		@include media('<=xxs') {
+			margin-bottom: 70px;
+			display: block;
+		}
 	}
 
 	&__logo {
-
+	
+		@include media('<=xxs') {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__button {
@@ -30,6 +86,10 @@
 		max-width: 1200px;
 		text-align: right;
 		margin-left: auto;
+		
+		@include media('<=xxs') {
+			text-align: left;
+			text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+		}
 	}
-
 }

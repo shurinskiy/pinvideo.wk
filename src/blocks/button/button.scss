@@ -13,4 +13,20 @@
 	color: #fff;
 	padding: 28px 20px;
 	border-radius: 5px;
+	text-align: center;
+	
+	@include media('<=xxxlg') {
+		font-size: 18px;
+		padding: 24px 20px;
+	}
+	
+	@include media('<=lg') {
+		font-size: 16px;
+		padding: 20px;
+	}
+	
+	@include media('<=xs') {
+		font-size: 15px;
+		padding: 18px 20px;
+	}
 }

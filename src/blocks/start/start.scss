@@ -8,6 +8,15 @@
 		padding: 80px 24px;
 		line-height: 1.15;
 		margin-bottom: 120px;
+		
+		@include media('<=sm') {
+			margin-bottom: 100px;
+		}
+		
+		@include media('<=xs') {
+			padding: 60px 16px;
+			// margin-bottom: 100px;
+		}
 	}
 
 	&__form {

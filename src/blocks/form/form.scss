@@ -9,10 +9,40 @@
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 300px;
+		
+		@include media('<=xxlg') {
+			margin-bottom: 270px;
+			grid-gap: 80px;
+		}
+		
+		@include media('<=lg') {
+			margin-bottom: 200px;
+			grid-gap: 50px 70px;
+		}
+		
+		@include media('<=sm') {
+			margin-bottom: 150px;
+			grid-gap: 40px 50px;
+		}
+		
+		@include media('<=xs') {
+			margin-bottom: 140px;
+			display: block;
+		}
 	}
 
 	&__field {
+		display: block;
+		box-sizing: border-box;
 		border-bottom: 3px solid black;
+
+		@include media('<=lg') {
+			border-width: 2px;
+		}
+		
+		@include media('<=xs') {
+			margin-bottom: 30px;
+		}
 
 		&_text {
 			grid-column: span 1;
@@ -32,10 +62,46 @@
 			&::placeholder {
 				color: #626262;
 			}
+
+			@include media('<=xxxlg') {
+				font-size: 38px;
+			}
+
+			@include media('<=xxlg') {
+				font-size: 34px;
+			}
+
+			@include media('<=xlg') {
+				font-size: 32px;
+			}
+
+			@include media('<=lg') {
+				font-size: 30px;
+			}
+
+			@include media('<=md') {
+				font-size: 28px;
+			}
+
+			@include media('<=sm') {
+				font-size: 26px;
+			}
+
+			@include media('<=xs') {
+				font-size: 24px;
+			}
+
+			@include media('<=xxs') {
+				font-size: 22px;
+			}
 		}
 
 		textarea {
 			min-height: 200px;
+			
+			@include media('<=lg') {
+				min-height: 160px;
+			}
 		}
 	}
 
@@ -44,6 +110,10 @@
 		align-items: center;
 		gap: 50px;
 		margin-bottom: 50px;
+
+		@include media('<=xs') {
+			flex-flow: column nowrap;
+		}
 	}
 
 	&__logo {
@@ -52,5 +122,9 @@
 	
 	&__button {
 		margin-right: auto;
+
+		@include media('<=xs') {
+			order: -1;
+		}
 	}
 }
