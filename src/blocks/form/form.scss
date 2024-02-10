@@ -26,7 +26,7 @@
 		}
 		
 		@include media('<=xs') {
-			margin-bottom: 140px;
+			margin-bottom: 80px;
 			display: block;
 		}
 	}
@@ -102,6 +102,10 @@
 			@include media('<=lg') {
 				min-height: 160px;
 			}
+			
+			@include media('<=xs') {
+				min-height: 130px;
+			}
 		}
 	}
 
@@ -118,12 +122,17 @@
 
 	&__logo {
 		margin-right: auto;
+
+		@include media('<=xs') {
+			margin: 0;
+		}
 	}
 	
 	&__button {
 		margin-right: auto;
-
+		
 		@include media('<=xs') {
+			margin: 0;
 			order: -1;
 		}
 	}

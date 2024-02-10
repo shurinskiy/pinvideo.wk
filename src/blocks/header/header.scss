@@ -1,8 +1,10 @@
 .header {
 	$self: &;
+	box-sizing: border-box;
 	min-height: 890px;
 	background: url('#{$images-path}header-bg.png') center top / cover no-repeat transparent;
 	margin-bottom: 110px;
+	padding: 24px 0 48px;
 	
 	@include media('<=xxxlg') {
 		min-height: 800px;
@@ -38,7 +40,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		padding-top: 24px;
 		gap: 50px;
 		margin-bottom: 165px;
 		max-width: 1800px;
@@ -70,12 +71,24 @@
 	&__logo {
 	
 		@include media('<=xxs') {
-			margin-bottom: 20px;
+			margin: 0 auto;
 		}
 	}
 
 	&__button {
+	
+		@include media('<=xxs') {
+			display: none;
+		}
 
+		&_mobile {
+			margin: 0 auto;
+			display: none;
+	
+			@include media('<=xxs') {
+				display: block;
+			}
+		}
 	}
 
 	&__bottom {
@@ -88,8 +101,9 @@
 		margin-left: auto;
 		
 		@include media('<=xxs') {
-			text-align: left;
+			text-align: center;
 			text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+			margin: 0 auto 50px;
 		}
 	}
 }
