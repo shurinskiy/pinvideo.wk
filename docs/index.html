@@ -39,20 +39,27 @@
 	<form class="start__form form container" action="./">
 		<div class="form__fields">
 			<label class="form__field form__field_text">
-				<input type="text" name="name" placeholder="Имя*">
+				<input type="text" name="pin_name" placeholder="Имя*">
 			</label>
 			<label class="form__field form__field_text">
-				<input type="text" name="company" placeholder="E-mail*">
+				<input type="text" name="pin_email" placeholder="E-mail*">
 			</label>
 			<label class="form__field form__field_text">
-				<input type="text" name="email" placeholder="Название компании">
+				<input type="text" name="pin_company" placeholder="Название компании">
 			</label>
 			<label class="form__field form__field_text">
-				<input type="text" name="phone" placeholder="Телефон">
+				<input type="text" name="pin_phone" placeholder="Телефон">
+			</label>
+			<label class="form__field form__field_blank">
+				<input type="text" name="pin_region" placeholder="Регион">
 			</label>
 			<label class="form__field form__field_area">
-				<textarea name="msg" placeholder="Опишите задачу"></textarea>
+				<textarea name="pin_msg" placeholder="Опишите задачу"></textarea>
 			</label>
+		</div>
+		<div class="form__alerts form__alerts_error container">
+			<span>Произошла ошибка. Пожалуйста, повторите попытку позже.</span>
+			<span>Пожалуйста, заполните все необходимые поля.</span>
 		</div>
 		<div class="form__buttons">
 			<a class="form__logo logo" href="./">pin.video</a>

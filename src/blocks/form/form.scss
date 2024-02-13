@@ -8,25 +8,21 @@
 		max-width: 1270px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 300px;
+		margin-bottom: 24px;
 		
 		@include media('<=xxlg') {
-			margin-bottom: 270px;
 			grid-gap: 80px;
 		}
 		
 		@include media('<=lg') {
-			margin-bottom: 200px;
 			grid-gap: 50px 70px;
 		}
 		
 		@include media('<=sm') {
-			margin-bottom: 150px;
 			grid-gap: 40px 50px;
 		}
 		
 		@include media('<=xs') {
-			margin-bottom: 80px;
 			display: block;
 		}
 	}
@@ -50,6 +46,10 @@
 		
 		&_area {
 			grid-column: span 2;
+		}
+
+		&_blank {
+			@include hide();
 		}
 
 		input, textarea {
@@ -106,6 +106,51 @@
 			@include media('<=xs') {
 				min-height: 130px;
 			}
+		}
+	}
+
+	&__alerts {
+		max-width: 1270px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 280px;
+		font-size: 24px;
+		
+		@include media('<=xxlg') {
+			margin-bottom: 250px;
+			font-size: 22px;
+		}
+		
+		@include media('<=lg') {
+			margin-bottom: 180px;
+			font-size: 20px;
+		}
+		
+		@include media('<=sm') {
+			margin-bottom: 130px;
+			font-size: 18px;
+		}
+		
+		@include media('<=xs') {
+			margin-bottom: 60px;
+			font-size: 16px;
+		}
+		
+		span {
+			display: block;
+		}
+
+		img {
+			margin: 0 auto;
+			display: block;
+		}
+
+		&_error {
+			color: #f00;
+		}
+		
+		&_success {
+			color: #00be00;
 		}
 	}
 
